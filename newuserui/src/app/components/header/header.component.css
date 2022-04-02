@@ -1,0 +1,7 @@
+@media screen and (min-width: 993Px) {
+    .list{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}

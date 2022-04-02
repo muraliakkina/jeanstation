@@ -1,0 +1,44 @@
+<h1 mat-dialog-title><strong>{{action}} Details : : </strong></h1>
+<div mat-dialog-content>
+  <div *ngIf="action != 'Details'; else details">
+    <div *ngIf="action != 'Delete'; else elseTemplate">
+      <mat-form-field>
+        <input placeholder="{{action}} doorNo" matInput [(ngModel)]="local_data.doorNo">
+      </mat-form-field>
+      <mat-form-field>
+        <input placeholder="{{action}} streetName" matInput [(ngModel)]="local_data.streetName">
+      </mat-form-field>
+      <mat-form-field>
+        <input placeholder="{{action}} city" matInput [(ngModel)]="local_data.city">
+      </mat-form-field>
+      <mat-form-field>
+        <input placeholder="{{action}} state" matInput [(ngModel)]="local_data.state">
+      </mat-form-field>
+      <mat-form-field>
+        <input placeholder="{{action}} pincode" matInput [(ngModel)]="local_data.pincode">
+      </mat-form-field>
+      <mat-form-field>
+        <input placeholder="{{action}} locality" matInput [(ngModel)]="local_data.locality">
+      </mat-form-field>
+      <mat-form-field>
+        <input placeholder="{{action}} district" matInput [(ngModel)]="local_data.district">
+      </mat-form-field>
+    </div>
+    <ng-template #elseTemplate>
+      Sure to delete <b>{{local_data.name}}</b>?
+    </ng-template>
+  </div>
+  <ng-template #details>
+    <div>doorNo    : {{local_data.doorNo}}</div>
+    <div>streetName: {{local_data.streetName}}</div>
+    <div>city      : {{local_data.city}}</div>
+    <div>state     : {{local_data.state}}</div>
+    <div>pincode   : {{local_data.pincode}}</div>
+    <div>locality  : {{local_data.locality}}</div>
+    <div>district  : {{local_data.district}}</div>
+  </ng-template>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="doAction()" mat-flat-button color="primary">{{action}}</button>
+  <button mat-button (click)="closeDialog()" mat-flat-button color="warn">Cancel</button>
+</div>

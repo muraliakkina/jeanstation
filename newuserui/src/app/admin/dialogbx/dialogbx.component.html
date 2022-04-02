@@ -1,0 +1,19 @@
+<h1 mat-dialog-title><strong>{{action}}</strong></h1>
+<div mat-dialog-content>
+  <mat-form-field *ngIf="action != 'Delete'; else elseTemplate">
+    <!-- <input placeholder="{{action}} OrderStatus" matInput [(ngModel)]="local_data.orderStatus"> -->
+    <mat-label>Select an option</mat-label>
+  <mat-select [(value)]="local_data.orderStatus">
+    <mat-option value="Deliverd">Deliverd</mat-option>
+    <!-- <mat-option value="option2">Option 2</mat-option>
+    <mat-option value="option3">Option 3</mat-option> -->
+  </mat-select>
+  </mat-form-field>
+  <ng-template #elseTemplate>
+    Sure to delete <b>{{local_data.orderId}}</b>?
+  </ng-template>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="doAction()" mat-flat-button color="primary">{{action}}</button>
+  <button mat-button (click)="closeDialog()" mat-flat-button color="warn">Cancel</button>
+</div>

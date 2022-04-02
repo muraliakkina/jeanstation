@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "589b57c8-1f81-408b-9413-49e5e5a9e13a": {
+      "ProjectGuid": "589b57c8-1f81-408b-9413-49e5e5a9e13a",
+      "DisplayName": "JeanStation.OrderService",
+      "ColorIndex": 0
+    },
+    "ce2e42eb-b32d-4653-b2e0-0129cf565b18": {
+      "ProjectGuid": "ce2e42eb-b32d-4653-b2e0-0129cf565b18",
+      "DisplayName": "JeanStation.APIGatewayService",
+      "ColorIndex": 1
+    },
+    "14bb1528-85e7-498f-b471-3915f8031156": {
+      "ProjectGuid": "14bb1528-85e7-498f-b471-3915f8031156",
+      "DisplayName": "JeanStation.CartService",
+      "ColorIndex": 2
+    },
+    "84ed59bd-d4c3-4c79-8d06-85edc7fd6b6c": {
+      "ProjectGuid": "84ed59bd-d4c3-4c79-8d06-85edc7fd6b6c",
+      "DisplayName": "JeanStation.PaymentService",
+      "ColorIndex": 3
+    },
+    "dd431284-a268-4c09-a3dd-a8317c9f9f75": {
+      "ProjectGuid": "dd431284-a268-4c09-a3dd-a8317c9f9f75",
+      "DisplayName": "JeanStation.ItemService",
+      "ColorIndex": 4
+    },
+    "35450584-4a6f-426c-ae44-8f4e5f411138": {
+      "ProjectGuid": "35450584-4a6f-426c-ae44-8f4e5f411138",
+      "DisplayName": "JeanStation.WhishListService",
+      "ColorIndex": 5
+    },
+    "1fe5562e-8bad-4ec0-a343-a3d342be7258": {
+      "ProjectGuid": "1fe5562e-8bad-4ec0-a343-a3d342be7258",
+      "DisplayName": "JeanStation.UserService",
+      "ColorIndex": 6
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "3d750467-c9f1-4e6b-9446-3c510155212d": {
+      "ProjectGuid": "3d750467-c9f1-4e6b-9446-3c510155212d",
+      "DisplayName": "JeanStationWhishlistService",
+      "ColorIndex": 7
+    },
+    "01a05c22-b452-4989-85e5-688c8cb62626": {
+      "ProjectGuid": "01a05c22-b452-4989-85e5-688c8cb62626",
+      "DisplayName": "JeanStation.EmailService",
+      "ColorIndex": 8
+    },
+    "bf3648db-2b56-426e-bf95-90e4b6f9b648": {
+      "ProjectGuid": "bf3648db-2b56-426e-bf95-90e4b6f9b648",
+      "DisplayName": "JeanStation.FileUploadAPI",
+      "ColorIndex": 9
+    }
+  },
+  "NextColorIndex": 10
+}

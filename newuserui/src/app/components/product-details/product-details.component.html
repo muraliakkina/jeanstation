@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="row d-flex justify-content-evenly align-items-center">
+        <div class="preview col-md-6">
+            <div class="fix ">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item  active">
+                            <img [src]="item.itemImage1" class="d-block w-100"  alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img [src]="item.itemImage2" class="d-block w-100"  alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img [src]="item.itemImage3" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="details col-md-6">
+            <h2 class="product-title"><strong>{{item.itemBrandName}}</strong></h2>
+            <div class="rating">
+                <div class="brand">
+                    <span>{{item.itemName}}</span>
+                </div>
+
+            </div>
+            <!-- <p class="product-description">Suspendisse quos? Tempus cras iure temporibus? Eu laudantium cubilia sem
+                sem! Repudiandae et! Massa senectus enim minim sociosqu delectus posuere.</p> -->
+            <h4 class="price"> <span>{{item.itemPrice}}</span></h4>
+
+            <h5 class="sizes"><strong>Size:  </strong>
+                <span class="size" data-toggle="tooltip" title="small">{{item.itemSize}}</span>
+            </h5>
+            <h5 class="colors"><strong>Color:  </strong>
+                <span>{{item.itemColor}}</span>
+            </h5>
+            <div class="d-flex flex-row justify-content-between">
+                <mat-form-field >  
+                  <mat-label>Select Quantity</mat-label>
+                  <mat-select [(value)]="qty">
+                    <mat-option value=1>1</mat-option>
+                    <mat-option value=2>2</mat-option>
+                    <mat-option value=3>3</mat-option>
+                    <mat-option value=4>4</mat-option>
+                    <mat-option value=5>5</mat-option>
+                  </mat-select>
+                </mat-form-field>
+                <div>
+                    <p><strong>Stock Left: {{item.itemStock}}</strong></p>
+                </div>
+            </div>
+            <div class="action d-flex flex-row justify-content-evenly">
+                <button mat-raised-button color="primary" (click)="addToCart(item.itemId,qty)"  type="button"><mat-icon>shopping_cart</mat-icon></button>
+                <button mat-raised-button color="warn" (click)="addToWishlist(item.itemId)" class="btn-danger" type="button"><span class="fa fa-heart"></span></button>
+            </div>
+        </div>
+    </div>
+</div>

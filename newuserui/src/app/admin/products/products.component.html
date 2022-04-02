@@ -1,0 +1,140 @@
+<div>
+    <div>
+        <div style="padding: 1%; text-align: center; color: darkred">
+            <h2>Products Listed</h2>
+        </div>
+        <div>
+            <mat-form-field appearance="standard" style="width: 100%;">
+                <mat-label>Search a Product</mat-label>
+                <input matInput (keyup)="applyFilter($event)" placeholder="enter item id" #input>
+            </mat-form-field>
+        </div>
+        <div>
+            <button mat-button (click)="openDialog('Add',{})" mat-flat-button color="primary">Add Item</button>
+            <mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+                <ng-container matColumnDef="itemId">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header> Item Id </th>
+                    <td mat-cell *matCellDef="let element"> {{ element.itemId }} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="name">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Item Name </th>
+                    <td mat-cell *matCellDef="let element"> {{ element.itemName }} </td>
+                </ng-container>
+
+                <!-- <ng-container matColumnDef="description">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Item Description </th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.itemDescription }}
+                    </td>
+                </ng-container> -->
+
+                <ng-container matColumnDef="material">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Item Material </th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.itemMaterial }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="type">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Item Type </th>
+                    <td mat-cell *matCellDef="let element"> {{ element.itemType }} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="category">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Item Category </th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.itemCategory }}
+                    </td>
+                </ng-container>
+
+                <!-- <ng-container matColumnDef="dateAdded">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                        Item Listed On
+                    </th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.dateAdded }}
+                    </td>
+                </ng-container> -->
+
+                <ng-container matColumnDef="size">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Item Size </th>
+                    <td mat-cell *matCellDef="let element"> {{ element.itemSize }} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="quantity">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Item Quantity </th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.itemStock }}
+                    </td>
+                </ng-container>
+
+                <!-- <ng-container matColumnDef="imageurl1">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Item Image1 </th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.itemImage1 }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="imageurl2">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Item Image2 </th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.itemImage2 }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="imageurl3">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Item Image3 </th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.itemImage3 }}
+                    </td>
+                </ng-container> -->
+
+                <ng-container matColumnDef="color">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Item Color </th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.itemColor }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="price">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Item price </th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.itemPrice }}
+                    </td>
+                </ng-container>
+
+                <ng-container matColumnDef="brandName">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Item Brand </th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.itemBrandName }}
+                    </td>
+                </ng-container>
+
+                <!-- <ng-container matColumnDef="storeId">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>Item Store Id </th>
+                    <td mat-cell *matCellDef="let element">
+                        {{ element.store_Id }}
+                    </td>
+                </ng-container> -->
+
+                <ng-container matColumnDef="actions">
+                    <th mat-header-cell *matHeaderCellDef> Action </th>
+                    <td mat-cell *matCellDef="let row" class="action-link">
+                        <a mat-raised-button color="accent" (click)="openDialog('Details',row)">Details</a>
+                        <a mat-raised-button color="primary" (click)="openDialog('Update',row)">Edit</a>
+                        <a mat-raised-button color="warn" (click)="openDialog('Delete',row)">Delete</a>
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+
+                <tr class="mat-row" *matNoDataRow>
+                    <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+                </tr>
+            </mat-table>
+            <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,88 @@
+<section class="">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 text-black">
+
+        
+        <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
+
+          <form [formGroup]="signupform" (ngSubmit)="signup()" style="width: 23rem;">
+
+            <h3 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Register Here</h3>
+
+
+            <div class="form-outline mb-4">
+              <label for="formGroupExampleInput2">Name</label>
+              <input type="text" class="form-control" [ngClass]="{'is-invalid': signupform.get('name').touched && signupform.get('name').invalid}" formControlName="name"  id="formGroupExampleInput2" placeholder="Name ">
+              <span *ngIf="signupform.get('name').hasError('required')" class="invalid-feedback">Name can't be blank.</span>
+            </div>
+              <div class="form-outline mb-4">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" [ngClass]="{'is-invalid': signupform.get('email').touched && signupform.get('email').invalid}" formControlName="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <span class="invalid-feedback">
+                 <span *ngIf="signupform.get('email').hasError('required')">Email can't be blank.</span>
+                 <span *ngIf="signupform.get('email').hasError('email')">Email must be valid.</span>
+              </span>
+              </div>
+              <p class="small mb-5 pb-lg-2"><button type="button"  data-keyboard="false" data-backdrop="static" (click)="SendOtp()"  class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Verify Email</button></p>
+              <div class="form-outline mb-4">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" [ngClass]="{'is-invalid': signupform.get('password').touched && signupform.get('password').invalid}"formControlName=password id="exampleInputPassword1" placeholder="Password">
+                <span class="invalid-feedback">
+                  <span *ngIf="signupform.get('password').hasError('required')">Password can't be blank.</span>
+                  <span *ngIf="signupform.get('password').hasError('minLength')">Password length should be atleast 8.</span>
+                </span>
+                
+              </div>
+          
+              <div class="form-group">
+                  <label for="formGroupExampleInput2">Mobile Number</label>
+                  <input type="text" class="form-control" [ngClass]="{'is-invalid': signupform.get('number').touched && signupform.get('number').invalid}" formControlName="number" id="formGroupExampleInput2" placeholder="Mobile No ">
+                  <span class="invalid-feedback">
+                    <span *ngIf="signupform.get('number').hasError('required')">Mobile Number can't be blank.</span>
+                    <span *ngIf="signupform.get('number').hasError('pattern')">Mobile Number must be of 10 digits.</span>
+                  </span>
+                </div>
+            <div class="pt-1 mb-4" style="margin-top: 3vh;">
+              <button class="btn btn-info btn-lg btn-dark" type="submit">Signup</button>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+      <div class="col-sm-6 px-0 d-none d-sm-block">
+        <!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img3.webp" alt="Login image" class="w-100 vh-100" style="object-fit: cover; object-position: left;"> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div  class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"> </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      
+         <form *ngIf="!EmailVerified" [formGroup]="Otpform" (ngSubmit)="VerifyOtp()" >
+        
+          <div id="otp" class="inputs d-flex flex-row justify-content-center mt-2">  <input class="m-2 text-center form-control rounded" type="text" formControlName="one" id="second" maxlength="1" /> <input class="m-2 text-center form-control rounded" formControlName="two" type="text" id="third" maxlength="1" /> <input class="m-2 text-center form-control rounded" formControlName="three" type="text" id="fourth" maxlength="1" /> <input class="m-2 text-center form-control rounded" formControlName="four" type="text" id="fifth" maxlength="1" />  </div>
+          <div class="modal-footer">
+            <button type="button" id="cancel" class="btn btn-dark" data-bs-dismiss="modal" type="submit">Verify</button>
+           </div>
+        </form>
+        <div *ngIf="EmailVerified">
+        <p>This email is already registered Kindly login</p>
+         <button href="login" class="btn btn-dark ">Login Page</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

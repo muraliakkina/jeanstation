@@ -1,0 +1,398 @@
+{
+  "Routes": [
+    //Item API
+
+    {
+      "DownstreamPathTemplate": "/api/Item/GetItem/{catchall}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationitemservice.azurewebsites.net"
+          //"Port": "27332"
+        }
+      ],
+      "UpstreamPathTemplate": "/Items/getItem/{catchall}",
+      "UpstreamHttpMethod": [
+        "POST",
+        "PUT",
+        "GET",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Item",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationitemservice.azurewebsites.net"
+          //"Port": "27332"
+        }
+      ],
+      "UpstreamPathTemplate": "/Items",
+      "UpstreamHttpMethod": [
+        "POST",
+        "PUT",
+        "GET",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Item/{catchall}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationitemservice.azurewebsites.net"
+          //"Port": "27332"
+        }
+      ],
+      "UpstreamPathTemplate": "/Items/{catchall}",
+      "UpstreamHttpMethod": [
+        "POST",
+        "PUT",
+        "GET",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Cart/dec/{userId}/{itemId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationcartservice.azurewebsites.net"
+          //"Port": "3917"
+        }
+      ],
+      "UpstreamPathTemplate": "/Cart/dec/{userId}/{itemId}",
+      "UpstreamHttpMethod": [
+        "POST",
+        "PUT",
+        "GET",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Cart/{userid}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationcartservice.azurewebsites.net"
+          //"Port": "3917"
+        }
+      ],
+      "UpstreamPathTemplate": "/Cart/{userid}",
+      "UpstreamHttpMethod": [
+        "POST",
+        "PUT",
+        "GET",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Cart/{userid}/cart/{catchall}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationcartservice.azurewebsites.net"
+          //"Port": "3917"
+        }
+      ],
+      "UpstreamPathTemplate": "/Cart/{userid}/cart/{catchall}",
+      "UpstreamHttpMethod": [
+        "POST",
+        "PUT",
+        "GET",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Cart/{itemId}/{userId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationcartservice.azurewebsites.net"
+          //"Port": "3917"
+        }
+      ],
+      "UpstreamPathTemplate": "/Cart/{itemId}/{userId}",
+      "UpstreamHttpMethod": [
+        "POST",
+        "PUT",
+        "GET",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Order",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationorderservice.azurewebsites.net"
+          //"Port": "30996"
+        }
+      ],
+      "UpstreamPathTemplate": "/Order",
+      "UpstreamHttpMethod": [
+        "POST",
+        "PUT",
+        "GET",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Order/{catchall}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationorderservice.azurewebsites.net"
+          //"Port": "30996"
+        }
+      ],
+      "UpstreamPathTemplate": "/Order/{catchall}",
+      "UpstreamHttpMethod": [
+        "POST",
+        "PUT",
+        "GET",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Payment/{catchall}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "21959"
+        }
+      ],
+      "UpstreamPathTemplate": "/Payment/{catchall}",
+      "UpstreamHttpMethod": [
+        "POST",
+        "PUT",
+        "GET",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/Login",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationuserservice.azurewebsites.net"
+          //"Port": "31506"
+        }
+      ],
+      "UpstreamPathTemplate": "/User/Login",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/AddUser",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationuserservice.azurewebsites.net"
+          //"Port": "31506"
+        }
+      ],
+      "UpstreamPathTemplate": "/User/Register",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/AddAdress",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationuserservice.azurewebsites.net"
+          //"Port": "31506"
+        }
+      ],
+      "UpstreamPathTemplate": "/User/Address/new",
+      "UpstreamHttpMethod": [
+        "POST"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/UpdateByUserId/email",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationuserservice.azurewebsites.net"
+          //"Port": "31506"
+        }
+      ],
+      "UpstreamPathTemplate": "/User/UpdateByUserId/email",
+      "UpstreamHttpMethod": [
+        "PUT"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/User/{catchall}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationuserservice.azurewebsites.net"
+          //"Port": "31506"
+        }
+      ],
+      "UpstreamPathTemplate": "/User/{catchall}",
+      "UpstreamHttpMethod": [
+        "POST",
+        "PUT",
+        "GET",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/User",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationuserservice.azurewebsites.net"
+          //"Port": "31506"
+        }
+      ],
+      "UpstreamPathTemplate": "/User",
+      "UpstreamHttpMethod": [
+        "GET"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Wishlist/{UserId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationwishlistservice.azurewebsites.net"
+          //"Port": "53803"
+        }
+      ],
+      "UpstreamPathTemplate": "/Whishlist/{UserId}",
+      "UpstreamHttpMethod": [
+        "POST",
+        "PUT",
+        "GET",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Wishlist/{itemId}/{userId}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationwishlistservice.azurewebsites.net"
+          //"Port": "53803"
+        }
+      ],
+      "UpstreamPathTemplate": "/Whishlist/{itemId}/{userId}",
+      "UpstreamHttpMethod": [
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Wishlist/{UserId}/{catchall}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationwishlistservice.azurewebsites.net"
+          //"Port": "53803"
+        }
+      ],
+      "UpstreamPathTemplate": "/Whishlist/{UserId}/{catchall}",
+      "UpstreamHttpMethod": [
+        "POST",
+        "PUT",
+        "GET",
+        "DELETE"
+      ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/File/upload",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationfileuplaodservice.azurewebsites.net"
+          //"Port": "16279"
+        }
+      ],
+      "UpstreamPathTemplate": "/Files/upload",
+      "UpstreamHttpMethod": [
+        "POST",
+        "PUT",
+        "GET",
+        "DELETE"
+      ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Mail/send",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "jeanstationemailservice.azurewebsites.net"
+          //"Port": "47951"
+        }
+      ],
+      "UpstreamPathTemplate": "/Mail/send",
+      "UpstreamHttpMethod": [
+        "POST"
+      ]
+    }
+  ]
+}

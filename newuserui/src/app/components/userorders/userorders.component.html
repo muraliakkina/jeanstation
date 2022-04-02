@@ -1,0 +1,61 @@
+<section class="gradient-custom-2">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-md-10 col-lg-8 col-xl-6">
+        <div class="card card-stepper" style="border-radius: 16px;">
+          <div class="card-header p-4">
+            <div class="d-flex flex-row justify-content-between align-items-center">
+              <div>
+                <p class="text-muted mb-2"> Order ID <span class="fw-bold text-body">{{order.orderId}}</span></p>
+                <!-- <p class="text-muted mb-0"> Place On <span class="fw-bold text-body">{{order.orderCreatedAt}}</span></p> -->
+              </div>
+              <div>
+                <h5 class="bold">Total Items {{order.totalProducts}}</h5>
+                <h4 class="mb-3">Price : {{order.totalPrice}}</h4>
+                <h5 class="bold">Status of Order : {{order.orderStatus}}</h5>
+              </div>
+            </div>
+          </div>
+          <div class="card-body p-4">
+            <div>
+              <h3>Items Ordered</h3>
+            </div>
+            <div class="d-flex flex-row mb-4 pb-2">
+              <div class="flex-fill">
+                <div card *ngFor="let item of items" style="border: crimson dotted;">
+                  <div card-body class="d-flex">
+                    <div>
+                      <img src="{{item.itemImage1}}" class="d-block " width="30%"  alt="">
+                    </div>
+                    <div>
+                      <p>Item Name : {{item.itemName}}</p>
+                      <p>Item Size : {{item.itemSize}}</p>
+                      <p>Item Color : {{item.itemColor}}</p>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+              <div>
+                <!-- <img class="align-self-center img-fluid" src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7288105/2018/10/24/a059288c-512c-468a-87d4-ce36b52840441540360274049-HERENOW-Men-Shirts-5241540360273894-1.jpg" width="250"> -->
+              </div>
+            </div>
+
+          </div>
+          <!-- <div class="card-footer p-4">
+            <div class="d-flex justify-content-between">
+              <h5 class="fw-normal mb-0"><a href="#!" style="text-decoration:none;color:red">Orders</a></h5>
+              <div class="border-start h-100"></div>
+              <h5 class="fw-normal mb-0"><a href="#!">Cancel</a></h5>
+                <div class="border-start h-100"></div>
+                <h5 class="fw-normal mb-0"><a href="#!">Pre-pay</a></h5>
+              <div class="border-start h-100"></div>
+              <h5 class="fw-normal mb-0"><a class="text-muted"><i class="fas fa-ellipsis-v"></i></a></h5>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,108 @@
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\appsettings.json
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.exe
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.deps.json
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.runtimeconfig.json
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.runtimeconfig.dev.json
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.dll
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\ref\FileUploadAPI.dll
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.pdb
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.csproj.AssemblyReference.cache
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.AssemblyInfoInputs.cache
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.AssemblyInfo.cs
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.csproj.CoreCompileInputs.cache
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\obj\Debug\net5.0\staticwebassets\FileUploadAPI.StaticWebAssets.Manifest.cache
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\obj\Debug\net5.0\staticwebassets\FileUploadAPI.StaticWebAssets.xml
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\obj\Debug\net5.0\scopedcss\bundle\FileUploadAPI.styles.css
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.RazorTargetAssemblyInfo.cache
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.csproj.CopyComplete
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.dll
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\obj\Debug\net5.0\ref\FileUploadAPI.dll
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.pdb
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.genruntimeconfig.cache
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\adminvm.adminvm\Documents\capstone_Project\TopJobsGateway\FileUploadAPI\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\appsettings.Development.json
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\appsettings.json
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.exe
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.deps.json
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.runtimeconfig.json
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.runtimeconfig.dev.json
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.dll
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\ref\FileUploadAPI.dll
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.pdb
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.csproj.AssemblyReference.cache
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.AssemblyInfoInputs.cache
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.AssemblyInfo.cs
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.csproj.CoreCompileInputs.cache
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\staticwebassets\FileUploadAPI.StaticWebAssets.Manifest.cache
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\staticwebassets\FileUploadAPI.StaticWebAssets.xml
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\scopedcss\bundle\FileUploadAPI.styles.css
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.RazorTargetAssemblyInfo.cache
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.csproj.CopyComplete
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.dll
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\ref\FileUploadAPI.dll
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.pdb
+D:\Work\Sutherland project\topjobs backend\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.genruntimeconfig.cache
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\appsettings.json
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.StaticWebAssets.xml
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.exe
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.deps.json
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.runtimeconfig.json
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.runtimeconfig.dev.json
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.dll
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\FileUploadAPI.pdb
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.csproj.AssemblyReference.cache
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.AssemblyInfoInputs.cache
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.AssemblyInfo.cs
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.csproj.CoreCompileInputs.cache
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\scopedcss\bundle\FileUploadAPI.styles.css
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\staticwebassets\FileUploadAPI.StaticWebAssets.Manifest.cache
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.RazorTargetAssemblyInfo.cache
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.csproj.CopyComplete
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.dll
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\refint\FileUploadAPI.dll
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.pdb
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\FileUploadAPI.genruntimeconfig.cache
+C:\Users\Rishabh Gupta\Downloads\top_jobsgateway_applicationchanges\FileUploadAPI\obj\Debug\net5.0\ref\FileUploadAPI.dll

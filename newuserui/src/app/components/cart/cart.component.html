@@ -1,0 +1,85 @@
+<div *ngIf="cartItems.length === 0" class="alert alert-info">
+    <div class="container w-100 h-100">
+        <div class="card ">
+            <h3 class="card-title" style="text-align: center;">My Cart</h3>
+
+            <div class="card-body">
+                <!-- <img src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90"
+                    alt=""  width="50%" style="position: relative; left: 15%;"> -->
+                <h4 style="text-align: center;">Your Cart is Empty!</h4>
+                <h6 style="text-align: center;">Add item to it now</h6>
+                <button type="button active" class="btn btn-dark"  routerLink="/product">Shop
+                    Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="cartItems.length > 0">
+    <div class="card">
+        <div class="row">
+            <div class="col-md-8 cart">
+                <div class="title">
+                    <div class="row">
+                        <div class="col">
+                            <h4><b>Shopping Cart</b></h4>
+                        </div>
+                        <div class="col align-self-center text-right "><button mat-raised-button color="warn" (click)="clearCart()">Clear Cart</button></div>
+                    </div>
+                </div>
+                <div class="row border-top border-bottom" *ngFor="let item of cartItems">
+                    <div class="row main align-items-center">
+                        <div class="col-2"><a [routerLink]="['/details',item.itemId]"><img class="img-fluid" [src] = "item.itemImg1" ></a></div>
+                        <div class="col">
+                            <div class="row text-muted">{{item.itemBrandName}}</div>
+                            <div class="row">{{item.itemName}}</div>
+                        </div>
+                        <div class="col"> <a  (click)="decreaseItems(item.itemId)" >-</a><a class="border">{{item.itemQuantity}}</a><a  (click)="increaseItem(item.itemId)">+</a> </div>
+                        <div class="col">&#8377; {{item.itemPrice}} <a class="close" (click)="removeItem(item.itemId)">&#10005;</a></div>
+                    </div>
+                </div>
+                <div class="back-to-shop"><a [routerLink]="['/product']" routerLinkActive="router-link-active" >&leftarrow;<span class="text-muted">Back to shop</span></a></div>
+            </div>
+            <div class="col-md-4 summary">
+                <div>
+                    <h5><b>Summary</b></h5>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col" style="padding-left:0;">Total Items</div>
+                    <div class="col text-right">{{cartQty}} </div>
+                </div>
+                <form>
+                    <p>Address</p>
+                    <mat-form-field >  
+                        <mat-label>Select Address</mat-label>
+                        <mat-select [(value)]="adresid">
+                          <mat-option *ngFor="let item of adresses" [value]="item.addressId">{{item.addressId}},{{item.streetName}},{{item.city}},{{item.state}},{{item.pincode}}</mat-option>
+                          <!-- <mat-option value=2>2</mat-option>
+                          <mat-option value=3>3</mat-option>
+                          <mat-option value=4>4</mat-option>
+                          <mat-option value=5>5</mat-option> -->
+                        </mat-select>
+                      </mat-form-field>
+                    <!-- <select>
+                        <option class="text-muted">Standard-Delivery- &#8377;5</option>
+                    </select> -->
+                    <!-- <p>GIVE CODE</p> <input id="code" placeholder="Enter your code"> -->
+                </form>
+                <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                    <div class="col">TOTAL PRICE</div>
+                    <div class="col text-right">&#8377;{{cartPrice}} </div>
+                    <!-- <div >Enter Card Details</div>
+                    <div>
+                        <input type="tel" name=""  placeholder="xxxx - xxxx - xxxx - xxxx" id="" required>
+                    </div>
+                    <div class="col">
+                        <input type="tex" placeholder="">
+                        <input type="number">
+                    </div> -->
+                  
+                </div> <button class="btn" (click)="placeOrder()" >Place Order</button>
+            </div>
+        </div>
+    </div>
+</div>
+

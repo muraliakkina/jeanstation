@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="card mt-2">
+        <div class="card-body">
+            <h4 class="card-title">Bar Chart</h4>
+            <canvas baseChart [data]="salesData" [type]="'bar'" [options]="chartOptions">
+            </canvas>
+        </div>
+    </div>
+    <div class="card mt-2">
+        <div class="card-body">
+            <h4 class="card-title">Line Chart</h4>
+            <canvas baseChart [data]="salesData" [type]="'line'" [options]="chartOptions">
+            </canvas>
+        </div>
+    </div>
+</div>

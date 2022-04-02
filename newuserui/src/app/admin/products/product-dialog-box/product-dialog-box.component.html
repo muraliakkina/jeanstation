@@ -1,0 +1,123 @@
+<h1 mat-dialog-title><strong>{{action}} Details : : </strong></h1>
+<div mat-dialog-content>
+  <div *ngIf="action != 'Details'; else details">
+    <div *ngIf="action != 'Delete'; else elseTemplate">
+      <mat-form-field>
+        <input placeholder="{{action}} Name" matInput [(ngModel)]="local_data.itemName">
+      </mat-form-field>
+      <mat-form-field>
+        <input placeholder="{{action}} Description" matInput [(ngModel)]="local_data.itemDescription">
+      </mat-form-field>
+      <mat-form-field>
+        <input placeholder="{{action}} Material" matInput [(ngModel)]="local_data.itemMaterial">
+      </mat-form-field>
+      <mat-form-field>
+        <input placeholder="{{action}} Brand Name" matInput [(ngModel)]="local_data.itemBrandName">
+      </mat-form-field>
+      <mat-form-field>
+        <!-- <input placeholder="{{action}} Type" matInput [(ngModel)]="local_data.itemType"> -->
+        <mat-label>Select an Fit Type</mat-label>
+        <mat-select [(value)]="local_data.itemType">
+          <mat-option value="Regular Fit">Regular Fit</mat-option>
+          <mat-option value="Slim Fit">Slim Fit</mat-option>
+          <mat-option value="Skinny Fit">Skinny Fit</mat-option>
+          <mat-option value="Bootcut">Bootcut</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <!-- <input placeholder="{{action}} Category" matInput [(ngModel)]="local_data.itemCategory"> -->
+        <mat-label>Select an Category</mat-label>
+        <mat-select [(value)]="local_data.itemCategory">
+          <mat-option value="Men">Men</mat-option>
+          <mat-option value="Women">Women</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <input placeholder="{{action}} Price" matInput [(ngModel)]="local_data.itemPrice">
+      </mat-form-field>
+      <mat-form-field>
+        <!-- <input placeholder="{{action}} Color" matInput [(ngModel)]="local_data.itemColor"> -->
+        <mat-label>Select an Color</mat-label>
+        <mat-select [(value)]="local_data.itemColor">
+          <mat-option value="Black">Black</mat-option>
+          <mat-option value="Blue">Blue</mat-option>
+          <mat-option value="Green">Green</mat-option>
+          <mat-option value="Grey">Grey</mat-option>
+          <mat-option value="White">White</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <!-- <input placeholder="{{action}} Size" matInput [(ngModel)]="local_data.itemSize"> -->
+        <mat-label>Select an Size</mat-label>
+        <mat-select [(value)]="local_data.itemSize">
+          <mat-option value="28">28</mat-option>
+          <mat-option value="30">30</mat-option>
+          <mat-option value="32">32</mat-option>
+          <mat-option value="34">34</mat-option>
+          <mat-option value="36">36</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+        <input placeholder="{{action}}  Quantity" matInput [(ngModel)]="local_data.itemStock">
+      </mat-form-field>
+      <div>
+        <div>
+          <label>Image1</label>
+          <form fxLayout="column" #form="ngForm">
+            <input type="file" accept=".img,.jpg,.jpeg,.webp" placeholder="Input file" name="input-file"
+              [(ngModel)]="local_data.itemImage1" (change)="selectFile1($event)" required />
+          </form>
+        </div>
+        <div>
+          <label>Image2</label>
+          <form fxLayout="column" #form="ngForm">
+            <input type="file" accept=".img,.jpg,.jpeg,.webp" placeholder="Input file" name="input-file"
+              [(ngModel)]="local_data.itemImage2" (change)="selectFile2($event)" required />
+          </form>
+        </div>
+        <div>
+          <label>Image3</label>
+          <form fxLayout="column" #form="ngForm">
+            <input type="file" accept=".img,.jpg,.jpeg,.webp" placeholder="Input file" name="input-file"
+              [(ngModel)]="local_data.itemImage3" (change)="selectFile3($event)" required />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <ng-template #elseTemplate>
+      Sure to delete <b>{{local_data.name}}</b>?
+    </ng-template>
+  </div>
+  <ng-template #details>
+    <div>
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img [src]="local_data.itemImage1" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img [src]="local_data.itemImage2" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>Item Name: {{local_data.itemName}}</div>
+    <div>Item Description: {{local_data.itemDescription}}</div>
+    <div>Item Material: {{local_data.itemMaterial}}</div>
+    <div>Item Brand Name: {{local_data.itemBrandName}}</div>
+    <div>Item Price: {{local_data.itemPrice}}</div>
+    <div>Item Type: {{local_data.itemType}}</div>
+    <div>Item Category: {{local_data.itemCategory}}</div>
+    <div>Item Size: {{local_data.itemSize}}</div>
+    <div>Item Quantity: {{local_data.itemStock}}</div>
+    <div>Item Added On : {{local_data.dateAdded}}</div>
+  </ng-template>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="doAction()" mat-flat-button color="primary">{{action}}</button>
+  <button mat-button (click)="closeDialog()" mat-flat-button color="warn">Cancel</button>
+</div>

@@ -1,0 +1,89 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../../../assets/Jeanstion.png" alt="" width="60%" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" *ngIf="getUserRole() != 'Admin'">
+                <li class="nav-item">
+                    <a class="nav-link " routerLink="/product" aria-current="page">Products</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" routerLink="/product" >Women</a>
+                </li> -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Profile
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" [routerLink]="['/user/edit-details']">Edit Profile</a></li>
+                      <li><a class="dropdown-item" routerLink="/user/orders" >Orders</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" routerLink="/address">Address</a></li>
+                    </ul>
+                  </li>
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" *ngIf="getUserRole() == 'Admin' ">
+                <li class="nav-item">
+                    <a class="nav-link " routerLink="/dashboard" aria-current="page">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " routerLink="/orders" aria-current="page">Orders</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/products" >Products</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav me-2 mb-2 mb-lg-0 list" >
+                
+                <div *ngIf="!getUserLoggedIn()">
+                    <li class="nav-item"  >
+                        <a class="nav-link " routerLink="/login"  aria-current="page">Login</a>
+                    </li>
+                    <!-- <li class="nav-item" >
+                        <a class="nav-link " routerLink="/register" aria-current="page">Register</a>
+                    </li> -->
+                </div>
+                    
+        
+                
+                
+                <div *ngIf="getUserLoggedIn() " style="display:flex">
+                    <li class="nav-link" style="color: aqua;">
+                        Welcome {{getUserName()}}
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn"  (click)="logout()" aria-current="page">Logout</button>
+                    </li>
+                </div>
+                
+                <li class="nav-link" *ngIf="getUserRole() != 'Admin'">
+                    <!-- <a class="nav-link" aria-current="page">
+                        <mat-icon>favorite</mat-icon>
+                    </a> -->
+                    <button type="button" class="btn btn-dark position-relative" routerLink="/wishlist">
+                        <mat-icon>favorite</mat-icon>
+                    </button>
+                </li>
+                <li class="nav-item" *ngIf="getUserRole() != 'Admin'">
+                    <button type="button" class="btn btn-dark position-relative" routerLink="/cart">
+                        <mat-icon>shopping_cart</mat-icon>
+                        <!-- <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            9
+                            <span class="visually-hidden">unread messages</span>
+                        </span> -->
+                    </button>
+                </li>
+            </ul>
+            <!-- <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+        </div>
+    </div>
+</nav>
